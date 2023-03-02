@@ -4,13 +4,12 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
-
 from scratchNode import mainGraphicEditorWindow
 
 
-def setPalette(app):
-    app.setStyle("Fusion")
-    darkPalette = app.palette()
+def setPalette(_app):
+    _app.setStyle("Fusion")
+    darkPalette = _app.palette()
     darkPalette.setColor(QPalette.ColorRole.Window, QColor(53, 53, 53))
     darkPalette.setColor(QPalette.ColorRole.WindowText, Qt.GlobalColor.white)
     darkPalette.setColor(QPalette.ColorGroup.Disabled, QPalette.ColorRole.WindowText, QColor(127, 127, 127), )
@@ -31,8 +30,7 @@ def setPalette(app):
     darkPalette.setColor(QPalette.ColorGroup.Disabled, QPalette.ColorRole.Highlight, QColor(80, 80, 80), )
     darkPalette.setColor(QPalette.ColorRole.HighlightedText, Qt.GlobalColor.white)
     darkPalette.setColor(QPalette.ColorGroup.Disabled, QPalette.ColorRole.HighlightedText, QColor(127, 127, 127), )
-    app.setPalette(darkPalette)
-
+    _app.setPalette(darkPalette)
 
 
 if __name__ == '__main__':
